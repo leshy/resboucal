@@ -28,6 +28,10 @@
     "ical": "^0.4.0",
     "jquery-browserify": "^1.8.1",
     "uglifyjs": "^2.4.10",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "ribcage": "git://github.com/leshy/ribcage.git",
+    "ribcage_db": "git://github.com/leshy/ribcage_db.git",
+    "ribcage_express4": "git://github.com/leshy/ribcage_express4.git",
+    "ribcage_logger": "git://github.com/leshy/ribcage_logger.git"
   }
 }
