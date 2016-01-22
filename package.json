@@ -21,18 +21,21 @@
     "bluebird": "^3.1.1",
     "browserify": "^13.0.0",
     "colors": "^1.1.2",
+    "compression": "^1.6.1",
+    "cookie-parser": "^1.4.1",
     "deamdify": "^0.2.0",
     "ejs": "^2.3.4",
     "ejsify": "^1.0.0",
     "express": "^4.13.3",
+    "helpers": "git://github.com/leshy/nodejs-helpers.git",
     "ical": "^0.4.0",
     "jquery-browserify": "^1.8.1",
-    "uglifyjs": "^2.4.10",
-    "underscore": "^1.8.3",
-    "helpers": "git://github.com/leshy/nodejs-helpers.git",
     "ribcage": "git://github.com/leshy/ribcage.git",
     "ribcage_db": "git://github.com/leshy/ribcage_db.git",
     "ribcage_express4": "git://github.com/leshy/ribcage_express4.git",
-    "ribcage_logger": "git://github.com/leshy/ribcage_logger.git"
+    "ribcage_logger": "git://github.com/leshy/ribcage_logger.git",
+    "uglifyjs": "^2.4.10",
+    "underscore": "^1.8.3",
+    "collections": "git://github.com/leshy/collections.git"
   }
 }
