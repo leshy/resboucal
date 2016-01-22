@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "browserifying..."
 
-node node_modules/browserify/bin/cmd.js -t ejsify clientside.js  -o static/js/bundle.js
+node node_modules/browserify/bin/cmd.js -t debowerify -t ejsify clientside.js  -o static/js/bundle.js
 
 echo "done: static/js/bundle.js"
 
@@ -14,22 +14,11 @@ if [ ! -z "$1" ]; then
 
   mv static/js/bundle.min.js_ static/js/bundle.min.js && rm static/js/bundle.js
   echo "done: static/js/bundle.min.js"
-  
-  node node_modules/uglify-js/bin/uglifyjs ejs/include/init.js \
-    -o ejs/include/init.min.js_ \
-    -c "dead_code=true,evaluate=true,join_vars=true,unused=true,drop_console=true" \
-    -m "toplevel,sort"
-  
-  mv ejs/include/init.min.js_ ejs/include/init.min.js
-  echo "done: clientside/init.min.js"
-  
+    
   node_modules/uglifycss/uglifycss static/css/main.css > static/css/main.min.css_
   mv static/css/main.min.css_ static/css/main.min.css
   echo "done: static/css/main.min.css"
 
-  node_modules/uglifycss/uglifycss ejs/include/init.css > ejs/include/init.min.css_
-  mv ejs/include/init.min.css_ ejs/include/init.min.css
-  echo "done: ejs/include/init.min.css"
   
 fi
 

@@ -1,0 +1,60 @@
+@import (inline) "../../bower_components/fullcalendar/dist/fullcalendar.css";
+
+
+body {
+    height: 100%;
+    background: black;
+    background: white;
+    overflow: hidden;
+    font-family: 'Monospace', 'Trebuchet MS', 'Tahoma', 'Arial';
+    font-size: 1.25vmin;
+}
+
+
+.textShadow {
+    text-shadow: 0.1vmin 0.1vmin 0 rgba(1,1,1,0.2);
+}
+
+.textShadowBig {
+    text-shadow: 0.25vmin 0.25vmin 0 rgba(1,1,1,0.25);
+}
+.boxShadow {
+    box-shadow: 0.25vmin 0.25vmin 0 rgba(1,1,1,0.2);
+}
+
+.anim { transition: all 0.5s ease;  }
+
+.animFast { transition: all 0.25s ease; }
+
+
+
+#calendar {
+    height: 100vmin;
+    width: 100vmin;
+
+    .fc-day {
+        .animFast;
+    }
+    .fc-day:hover {
+        background: #f5f5f5;
+    }
+    .fc-day-number {
+            background: #eee;
+    }
+    
+    .fc-day-grid-event {
+        .anim;
+        .boxShadow;
+        cursor: pointer;
+        .textShadow;
+    }
+    .fc-day-grid-event:hover {
+        padding: 1vmin;
+    }
+
+}
+
+.fc-head {
+    .textShadowBig;
+}
+
